@@ -1,0 +1,37 @@
+seed: 42
+
+paths:
+  raw_csv: data/raw/bes_corpus.csv
+  processed_csv: data/processed/bes_processed.csv
+  embeddings_npy: data/processed/scibert_embeddings.npy
+  topic_model: data/processed/bertopic_model
+  output_tables: outputs/tables
+  output_figures: outputs/figures
+
+corpus:
+  year_min: 2000
+  year_max: 2025
+  language: en
+
+scibert:
+  model_name: allenai/scibert_scivocab_uncased
+  max_length: 512
+  pooling: mean
+  document_aggregation: mean
+
+bertopic:
+  umap_n_neighbors: 15
+  umap_n_components: 5
+  umap_min_dist: 0.0
+  umap_metric: cosine
+  hdbscan_min_cluster_size: 15
+  hdbscan_metric: euclidean
+  hdbscan_cluster_selection_method: eom
+  min_topic_size: 15
+  top_n_words: 10
+
+visual_umap:
+  n_neighbors: 15
+  min_dist: 0.1
+  metric: cosine
+  n_components: 2

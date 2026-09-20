@@ -1,0 +1,22 @@
+name: scientific-literature-trajectories
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - networkx
+  - pyyaml
+  - pip:
+      - torch
+      - transformers
+      - spacy
+      - scispacy
+      - bertopic
+      - umap-learn
+      - hdbscan
+      - tqdm
