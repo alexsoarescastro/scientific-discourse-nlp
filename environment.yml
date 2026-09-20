@@ -1,0 +1,26 @@
+name: bes-discourse
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - networkx
+  - pyyaml
+  - requests
+  - pip:
+      - torch
+      - transformers
+      - spacy
+      - scispacy
+      - bertopic
+      - umap-learn
+      - hdbscan
+      - gensim
+      - shap
+      - statsmodels
